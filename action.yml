@@ -1,0 +1,9 @@
+name: 'app.yaml Builder'
+description: 'Builds the app.yaml for each environment'
+inputs:
+  environment_variables:
+    description: 'A list of environment variables separated by :'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
